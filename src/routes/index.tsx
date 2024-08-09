@@ -1,9 +1,9 @@
 import {useRoutes, Navigate} from "react-router-dom";
 import {lazy} from "react";
 
-import MyLayout from "/src/layout/index";
-import Login from "/src/pages/login/login";
-import Home from "/src/pages/home";
+import LayoutComponent from "/src/layout/index";
+import LoginComponent from "/src/pages/login/index";
+import HomeComponent from "/src/pages/home/index";
 import User from "/src/pages/user";
 import Error404 from "/src/pages/404/error404";
 //公共
@@ -22,7 +22,7 @@ export const routerItem: Array<object> = [
         path: "/login",
         key: "login",
         label: "登录",
-        element: <Login/>,
+        element: <LoginComponent/>,
         meta: {
             noAuth: true    //不需要token检验
         }
@@ -31,13 +31,13 @@ export const routerItem: Array<object> = [
         path: "/layout",
         key: "layout",
         label: "控制台",
-        element: <MyLayout/>,
+        element: <LayoutComponent/>,
         children: [
             {
                 path: "home",
                 key: "home",
                 label: "首页",
-                element: lazyLoad(lazy(() => import("/src/pages/home"))),//这里是延迟加载
+                element: lazyLoad(lazy(() => import("/src/pages/home/index"))),//这里是延迟加载
             },
             {
                 path: "user",
@@ -49,7 +49,7 @@ export const routerItem: Array<object> = [
                         path: "home1",
                         key: "home1",
                         label: "首页1",
-                        element: <Home/>
+                        element: <HomeComponent/>
                     },
                     {
                         path: "user1",

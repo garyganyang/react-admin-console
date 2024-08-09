@@ -1,5 +1,5 @@
 import {FunctionComponent} from 'react'
-import "./login.scss";
+import "./index.scss";
 import reactIcon from "/src/assets/react.svg";
 
 import {Button, Checkbox, Form, Input, message} from 'antd';
@@ -28,7 +28,7 @@ interface State {
     // count: number;
 }
 
-const Login: FunctionComponent<Props> = ({title}) => {
+const Index: FunctionComponent<Props> = ({title}) => {
     title = title || "aaaaaaa"
     const navigate = useNavigate();
     const [messageApi, contextHolder] = message.useMessage();
@@ -129,4 +129,4 @@ const Login: FunctionComponent<Props> = ({title}) => {
     );
 }
 
-export default Login
+export default Index
