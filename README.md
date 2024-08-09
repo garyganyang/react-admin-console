@@ -1,4 +1,4 @@
-## React + TypeScript + Vite + AntDesign
+## React + TypeScript + Vite + AntDesign + tailwindcss
 
 <div style="">
     <img src="https://img.shields.io/badge/node-v20.16.0-green" alt="npm package"/>
@@ -12,13 +12,18 @@
     <img src="https://img.shields.io/badge/redux-^5.0.1-yellow" alt="redux package"/>
     <span> </span>
     <img src="https://img.shields.io/badge/AntDesign-^5.20.0-blue" alt="AntDesign package"/>
+    <span> </span>
+    <img src="https://img.shields.io/badge/tailwinCSS-^3.4.7-green" alt="tailwinCSS package"/>
 </div>
 
 本项目旨在帮助大家快速理解和搭建一个React项目,不论是学习还是做项目,希望都能用得上.
 如何一步一步搭建并理解react及其周边呢?
 
 可以参考如下的文章:
+
 [React+Antd+Vite+TypeScript 项目实战教程](https://blog.csdn.net/bobo789456123/article/details/130591757)
+
+[Vite + React + Ant Design + Tailwind CSS + ESLint + Prettier + TypeScript 最佳实践](https://zhuanlan.zhihu.com/p/552344435)
 
 ### Preview(预览)
 <div style="width: 25%; margin: 0 auto;">
